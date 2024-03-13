@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		"baseUrl": "./",
+		"module": "commonjs",
+		"esModuleInterop": true,
+		"target": "es6",
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"outDir": "./src/dist",
+		"resolveJsonModule": true,
+		"typeRoots": ["./custom_typings", "./node_modules/@types"],
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true
+	},
+	"exclude": ["./node_modules"],
+	"paths": {
+		"*": ["./src/types/global.d.ts"]
+	},
+	"include": ["**/*"],
+	"files": ["src/types/global.d.ts"],
+	"lib": ["es2015"]
+}
